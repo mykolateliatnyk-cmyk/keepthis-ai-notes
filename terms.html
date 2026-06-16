@@ -4,139 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Use — Keep This</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
-      line-height: 1.7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #111111;
+      color: #cccccc;
+      line-height: 1.75;
+      font-size: 16px;
     }
 
-    .container {
-      max-width: 720px;
+    .wrap {
+      max-width: 760px;
       margin: 0 auto;
-      padding: 48px 24px 80px;
+      padding: 56px 32px 96px;
     }
 
-    .app-title {
+    /* ── Header ── */
+    .app-name {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 52px;
+      color: #ffffff;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .app-sub {
+      font-size: 15px;
+      color: #666666;
+      margin-bottom: 56px;
+    }
+
+    /* ── Page title ── */
+    .page-title {
       font-size: 32px;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+    }
+    .page-meta {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 18px;
+    }
+    .page-intro {
+      font-size: 15px;
+      color: #888888;
+      margin-bottom: 48px;
     }
 
-    .app-subtitle {
-      font-size: 16px;
-      color: #8b949e;
-      margin-bottom: 40px;
-    }
-
+    /* ── Section label (orange uppercase) ── */
     .section-label {
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.8px;
       text-transform: uppercase;
       color: #e85a28;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
-    .updated {
-      font-size: 13px;
-      color: #8b949e;
-      margin-bottom: 20px;
-    }
-
-    .intro {
-      font-size: 15px;
-      color: #8b949e;
-      margin-bottom: 36px;
-      line-height: 1.7;
-    }
-
+    /* ── Items ── */
     .item {
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
-
     .item h3 {
       font-size: 17px;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
-
-    .item p, .item li {
+    .item p {
       font-size: 15px;
-      color: #8b949e;
-      line-height: 1.7;
+      color: #888888;
+      line-height: 1.75;
     }
-
-    .item ul {
-      padding-left: 20px;
-      margin-top: 8px;
-    }
-
-    .item ul li {
-      margin-bottom: 6px;
-    }
-
-    .item ul li strong {
-      color: #e6edf3;
-    }
-
     .item p + p {
       margin-top: 10px;
     }
+    .item ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    .item ul li {
+      font-size: 15px;
+      color: #888888;
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+    .item ul li strong {
+      color: #cccccc;
+    }
 
+    /* ── Callout / note ── */
     .note {
       border-left: 3px solid #e85a28;
-      padding: 12px 16px;
+      padding: 10px 16px;
       background: rgba(232, 90, 40, 0.07);
       border-radius: 0 6px 6px 0;
-      margin-top: 12px;
+      margin-top: 14px;
       font-size: 14px;
-      color: #8b949e;
+      color: #888888;
     }
 
-    .divider {
-      border: none;
-      border-top: 1px solid #21262d;
-      margin: 36px 0;
-    }
-
-    a {
-      color: #e85a28;
-      text-decoration: none;
-    }
+    /* ── Links ── */
+    a { color: #e85a28; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid #222222;
+      margin: 40px 0;
+    }
+
+    /* ── Footer ── */
     footer {
-      text-align: center;
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #222222;
       font-size: 13px;
-      color: #484f58;
-      padding-top: 32px;
-      border-top: 1px solid #21262d;
-      margin-top: 48px;
+      color: #444444;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
 
-  <h1 class="app-title">Keep This</h1>
-  <p class="app-subtitle">AI Notes for Mac</p>
+  <h1 class="app-name">Keep This</h1>
+  <p class="app-sub">AI Notes for Mac</p>
 
-  <p class="section-label">Terms of Use</p>
-  <p class="updated">Last updated: June 16, 2026</p>
-
-  <p class="intro">
-    These Terms of Use govern your use of <strong style="color:#e6edf3">Keep This — AI Notes</strong>
-    ("the App"), developed by Mykola Teliatnyk ("we", "us", or "our").
-    By downloading or using the App, you agree to be bound by these terms.
+  <h2 class="page-title">Terms of Use</h2>
+  <p class="page-meta">Last updated: June 16, 2026</p>
+  <p class="page-intro">
+    These Terms of Use govern your use of <strong style="color:#cccccc">Keep This — AI Notes</strong>
+    ("the App"), developed by Mykola Teliatnyk. By downloading or using the App,
+    you agree to be bound by these terms.
   </p>
 
-  <hr class="divider" />
+  <p class="section-label">License Agreement</p>
 
   <div class="item">
     <h3>1. License</h3>
