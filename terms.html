@@ -1,201 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Use — Keep This</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #111111;
-      color: #cccccc;
-      line-height: 1.75;
-      font-size: 16px;
-    }
-
-    .wrap {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 56px 32px 96px;
-    }
-
-    /* ── Header ── */
-    .app-name {
-      font-family: 'Permanent Marker', cursive;
-      font-size: 52px;
-      color: #ffffff;
-      line-height: 1.1;
-      margin-bottom: 6px;
-    }
-    .app-sub {
-      font-size: 15px;
-      color: #666666;
-      margin-bottom: 56px;
-    }
-
-    /* ── Page title ── */
-    .page-title {
-      font-size: 32px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 6px;
-    }
-    .page-meta {
-      font-size: 14px;
-      color: #666666;
-      margin-bottom: 18px;
-    }
-    .page-intro {
-      font-size: 15px;
-      color: #888888;
-      margin-bottom: 48px;
-    }
-
-    /* ── Section label (orange uppercase) ── */
-    .section-label {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-      color: #e85a28;
-      margin-bottom: 28px;
-    }
-
-    /* ── Items ── */
-    .item {
-      margin-bottom: 36px;
-    }
-    .item h3 {
-      font-size: 17px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 8px;
-    }
-    .item p {
-      font-size: 15px;
-      color: #888888;
-      line-height: 1.75;
-    }
-    .item p + p {
-      margin-top: 10px;
-    }
-    .item ul {
-      padding-left: 20px;
-      margin-top: 10px;
-    }
-    .item ul li {
-      font-size: 15px;
-      color: #888888;
-      margin-bottom: 6px;
-      line-height: 1.6;
-    }
-    .item ul li strong {
-      color: #cccccc;
-    }
-
-    /* ── Callout / note ── */
-    .note {
-      border-left: 3px solid #e85a28;
-      padding: 10px 16px;
-      background: rgba(232, 90, 40, 0.07);
-      border-radius: 0 6px 6px 0;
-      margin-top: 14px;
-      font-size: 14px;
-      color: #888888;
-    }
-
-    /* ── Links ── */
-    a { color: #e85a28; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* ── Divider ── */
-    hr {
-      border: none;
-      border-top: 1px solid #222222;
-      margin: 40px 0;
-    }
-
-    /* ── Footer ── */
-    footer {
-      margin-top: 56px;
-      padding-top: 24px;
-      border-top: 1px solid #222222;
-      font-size: 13px;
-      color: #444444;
-      text-align: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Terms of Use — Keep This</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --bg: #1a1a1a;
+    --card: #232323;
+    --text: #e8e8e6;
+    --text-dim: #a8a8a4;
+    --accent: #e85a28;
+    --border: #333;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  .app-name {
+    font-size: 14px; color: var(--accent); font-weight: 600;
+    letter-spacing: 0.02em; text-transform: uppercase; margin-bottom: 8px;
+  }
+  h1 { font-size: 32px; font-weight: 700; margin: 0 0 8px; }
+  .updated { color: var(--text-dim); font-size: 14px; }
+  .intro { color: var(--text-dim); font-size: 16px; margin-top: 20px; }
+  section { margin-top: 36px; }
+  h2 {
+    font-size: 19px; font-weight: 600; margin: 0 0 6px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  }
+  p { margin: 14px 0; }
+  ul { margin: 14px 0; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--text-dim); font-size: 13px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  footer a { color: var(--text-dim); margin-right: 16px; }
+  footer a:hover { color: var(--accent); }
+</style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1 class="app-name">Keep This</h1>
-  <p class="app-sub">AI Notes for Mac</p>
+  <div class="app-name">Keep This — AI Notes for Mac</div>
+  <h1>Terms of Use</h1>
+  <div class="updated">Last updated: June 2026</div>
+  <p class="intro">These Terms of Use govern your use of <strong>Keep This — AI Notes</strong> ("the App"), developed by Mykola Teliatnyk. By downloading or using the App, you agree to be bound by these terms.</p>
 
-  <h2 class="page-title">Terms of Use</h2>
-  <p class="page-meta">Last updated: June 16, 2026</p>
-  <p class="page-intro">
-    These Terms of Use govern your use of <strong style="color:#cccccc">Keep This — AI Notes</strong>
-    ("the App"), developed by Mykola Teliatnyk. By downloading or using the App,
-    you agree to be bound by these terms.
-  </p>
+  <section>
+    <h2>1. License</h2>
+    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal, non-commercial purposes. You may not copy, modify, distribute, sell, or lease any part of the App.</p>
+  </section>
 
-  <p class="section-label">License Agreement</p>
-
-  <div class="item">
-    <h3>1. License</h3>
-    <p>
-      We grant you a limited, non-exclusive, non-transferable, revocable license to use the App
-      for your personal, non-commercial purposes. You may not copy, modify, distribute, sell,
-      or lease any part of the App.
-    </p>
-  </div>
-
-  <div class="item">
-    <h3>2. Subscriptions</h3>
+  <section>
+    <h2>2. Subscriptions</h2>
     <p>Keep This Pro is available as an auto-renewable subscription:</p>
     <ul>
       <li><strong>Monthly</strong> — $3.99 / month</li>
       <li><strong>Yearly</strong> — $29.99 / year</li>
     </ul>
-    <p style="margin-top:12px;">
-      Payment is charged to your Apple ID at confirmation of purchase. The subscription
-      automatically renews unless cancelled at least 24 hours before the end of the current period.
-      You can manage and cancel your subscription in your App Store account settings at any time.
-      No refunds are provided for unused portions of a subscription period.
-    </p>
-  </div>
+    <p>Payment is charged to your Apple ID at confirmation of purchase. The subscription automatically renews unless cancelled at least 24 hours before the end of the current period. You can manage and cancel your subscription in your App Store account settings at any time. No refunds are provided for unused portions of a subscription period.</p>
+  </section>
 
-  <div class="item">
-    <h3>3. AI Features</h3>
-    <p>
-      The App uses an AI service to process text in your notes. By using AI features, you agree
-      not to submit content that is illegal, harmful, or violates any third-party rights.
-      AI-generated results are provided "as is" without any guarantees of accuracy.
-      We are not responsible for the content generated by AI.
-    </p>
-  </div>
+  <section>
+    <h2>3. AI Features</h2>
+    <p>The App uses an AI service to process text in your notes. By using AI features, you agree not to submit content that is illegal, harmful, or violates any third-party rights. AI-generated results are provided "as is" without any guarantees of accuracy. We are not responsible for the content generated by AI.</p>
+  </section>
 
-  <div class="item">
-    <h3>4. User Content</h3>
-    <p>
-      Your notes are stored locally on your device. We do not access, collect, or use the content
-      of your notes except when you explicitly trigger an AI action — in which case the selected
-      text is sent to our AI service for processing.
-    </p>
-    <div class="note">
-      See our <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/privacy.html">Privacy Policy</a>
-      for full details on data handling.
-    </div>
-  </div>
+  <section>
+    <h2>4. User Content &amp; Data</h2>
+    <p>Your notes are stored locally on your device. We do not access, collect, or use the content of your notes except when you explicitly trigger an AI action — in which case the selected text is sent to our AI service for processing.</p>
+    <p>The App also uses an anonymous device identifier and anonymous product analytics (e.g. feature usage, subscription plan selected) to operate subscription features and improve the App. This data is never linked to your name, email address, or Apple ID, and is never used for advertising or tracking across other apps or websites.</p>
+    <p>See our <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/privacy.html">Privacy Policy</a> for full details on data handling.</p>
+  </section>
 
-  <div class="item">
-    <h3>5. Prohibited Use</h3>
+  <section>
+    <h2>5. Prohibited Use</h2>
     <p>You agree not to:</p>
     <ul>
       <li>Use the App for any unlawful purpose</li>
@@ -203,43 +93,34 @@
       <li>Use AI features to generate harmful, abusive, or illegal content</li>
       <li>Circumvent any subscription or licensing restrictions</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="item">
-    <h3>6. Disclaimer of Warranties</h3>
-    <p>
-      The App is provided "as is" without warranty of any kind. We do not guarantee that the App
-      will be error-free or uninterrupted. Your use of the App is at your sole risk.
-    </p>
-  </div>
+  <section>
+    <h2>6. Disclaimer of Warranties</h2>
+    <p>The App is provided "as is" without warranty of any kind. We do not guarantee that the App will be error-free or uninterrupted. Your use of the App is at your sole risk.</p>
+  </section>
 
-  <div class="item">
-    <h3>7. Limitation of Liability</h3>
-    <p>
-      To the fullest extent permitted by law, we shall not be liable for any indirect, incidental,
-      special, or consequential damages arising from your use of the App.
-    </p>
-  </div>
+  <section>
+    <h2>7. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App.</p>
+  </section>
 
-  <div class="item">
-    <h3>8. Changes to Terms</h3>
-    <p>
-      We may update these Terms from time to time. Continued use of the App after changes
-      constitutes acceptance of the new Terms.
-    </p>
-  </div>
+  <section>
+    <h2>8. Changes to Terms</h2>
+    <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the new Terms.</p>
+  </section>
 
-  <div class="item">
-    <h3>9. Contact</h3>
-    <p>
-      If you have questions about these Terms, contact us at
-      <a href="mailto:mykola.teliatnyk@gmail.com">mykola.teliatnyk@gmail.com</a>
-      or visit our <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/">support page</a>.
-    </p>
-  </div>
+  <section>
+    <h2>9. Contact</h2>
+    <p>If you have questions about these Terms, contact us at <a href="mailto:mykola.teliatnyk@gmail.com">mykola.teliatnyk@gmail.com</a> or visit our <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/">support page</a>.</p>
+  </section>
 
   <footer>
-    © 2026 Mykola Teliatnyk · Keep This — AI Notes
+    <div>
+      <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/">Support</a>
+      <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/privacy.html">Privacy Policy</a>
+    </div>
+    <div>© 2026 Mykola Teliatnyk · Keep This — AI Notes</div>
   </footer>
 
 </div>
